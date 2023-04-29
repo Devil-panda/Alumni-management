@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*
+{
+    font-family: 'Poppins', sans-serif;
+    /*background-color: hsla(185, 24%, 80%, 0.75);*/
+    margin: 0;
+    padding: 0;
+}
+/*::selection{
+    color: #fff;
+    background: #6665ee;
+}*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #23242a;
+    margin-top: -2.5vh;
+    margin-left: -5vh;
+}
+/*.container{
+    position: absolute;
+
+   
+    min-width: fit-content;
+    border-radius: 35px;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(0deg, #626568, #19191b);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0);S
+}*/
+.form{
+    background-color: #1c1c1c;
+    height: 70vh;
+    width: 200vh;
+    padding: 30px 35px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.form::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    height: 100vh;
+    width: 200vh;
+    transform-origin: bottom left;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    animation: animate 6s linear infinite;
+}
+.form::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    height: 100vh;
+    width: 200vh;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+form 
+{
+	position: absolute;
+	inset: 2px;
+	background: #28292d;
+	padding: 30px 35px;
+	border-radius: 25px;
+	z-index: 10 ;
+	display: flex;
+	flex-direction: column;
+  /* backdrop-filter: blur(20px); */
+}
+
+.text-center {
+    color: #45f3ff;
+}
+ .form form .form-control{
+    height: 40px;
+    font-size: 15px;
+}
+ .form form .forget-pass{
+    margin: -15px 0 15px 0;
+}
+.form form .forget-pass a{
+   font-size: 15px;
+}
+ .form form .button{
+    background: #45f3ff;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+ .form form .button:hover{
+    background: #9b9bc0;
+}
+ .form form .link{
+    padding: 5px 0;
+}
+ .form form .link a{
+    color: #6665ee;
+}
+ .login-form form p{
+    font-size: 14px;
+}
+ .row .alert{
+    font-size: 14px;
+    color: black;
+    font-weight: bolder;
+}
+
+.form-control    {
+    border: none;
+    color: #000;
+}
+
+/* Gallery CSS */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .search-text {
+    background: transparent;
+    color: #ffffff;
+    top: -3vh;
+	  left :70vh;
+	  position: relative;
+	  width: 10vh;
+	  height: 5vh;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+    margin-right: 5px;
+  }
+  .search-text:hover {
+    background: #45f3ff;
+    color: black;
+    border: none;
+  }
+  .gallery-text {
+    background: transparent;
+    color: #ffffff;
+    top: -8vh;
+	  left : 83vh;
+	  position: relative;
+	  width: 10vh;
+	  height: 5vh;
+    border-radius: 10px;
+    font-weight: 600;
+    border: none;
+  }
+  .gallery-text:hover {
+    background: #45f3ff;
+    color: black;
+    border: none;
+  }
+  .header-login {
+    color: #45f3ff;
+    position: relative;
+    font-size: 3.5vh;
+    left: -70vh;
+    top: -12vh;
+  }
